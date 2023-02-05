@@ -1,0 +1,70 @@
+\documentclass{book}
+
+\title{Lecture Notes for CHE F414 : Transport Phenomena}
+
+\author{Bhanu Vardhan Reddy Kuncharam,\\ Assistant Professor, BITS Pilani \\ Pranay Venkatesh \\ Student, BITS Pilani}
+
+\date{}
+
+\usepackage{graphicx}
+
+\graphicspath{ {figures/} }
+
+\usepackage{mathptmx, mathtools}
+
+\usepackage{amsmath,amssymb,amsfonts}
+
+\usepackage{float}
+
+\usepackage{subcaption}
+
+\usepackage{indentfirst}
+
+\usepackage{inconsolata}
+
+\usepackage{xcolor}
+
+\usepackage{listings}
+
+\usepackage{hyperref}
+
+\usepackage{accents}
+
+\usepackage{empheq}
+
+\usepackage[T1]{fontenc}
+
+\newcommand{\SubItem}[1]{
+    {\setlength\itemindent{15pt} \item[-] #1}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+
+\tableofcontents
+
+\chapter*{Introduction}
+
+This series of lecture notes will cover the three aspects of transport processes related to chemical engineering : momentum transport, energy transport and mass transport. As we proceed, we will draw analogies between the concepts and equations of these three types of transport and use them to solve relevant problems in chemical engineering.
+
+The typical kind of problems involved in this subject would be analysing the transport processes of a fluid in a given domain of space. The best way to deal with these problems is to think of what fluid properties we want to track in that domain of space. For most chemical engineering problems, knowing the variation of fluid velocity, temperature and concentrations would suffice. We hence define a "field" over our domain of interest for each of these quantities. For temperature and concentrations, we can define a scalar field, while for velocities, we define a vector field. We can then use certain assumptions we make about the fluid flow and the domain of interest as well as a few physical laws to solve for these fields.
+
+When describing transport, we can talk about fluids at three different scales. At the macroscopic level, we see how physical quantities vary with a bulk of the fluid. At this scale, we can abstract out most of the details between interactions of fluid molecules or fluid elements. At the microscopic level,  we divide the bulk fluid into differential "fluid elements" and write down equations that describe their motion. At these two levels, we maintain a "continuum approximation", whereby we assume that the fluid or material is present at every point in space within the domain of interest. If we dig a little deeper and think about the fundamental mechanisms of transport in terms of molecular forces and properties, we get to the last scale at which we think about problems. 
+
+\part{Momentum Transport}
+
+\include{ch1.tex}
+
+\include{ch2.tex}
+
+\part{Energy Transport}
+
+\part{Mass Transport}
+
+
+\end{document}
+
